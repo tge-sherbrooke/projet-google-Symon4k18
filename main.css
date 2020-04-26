@@ -1,1 +1,90 @@
 /*CSS STYLES*/
+
+ /* DEBUT RULE SETS */
+
+body {				/*Détermine le style à utiliser pour la page puisqu'on a retiré tout les settings par défault // this is called a STATEMENT*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  width: 100%;
+}
+
+ul {		
+  list-style: none;
+}
+ /* FIN RULE SETS */
+ 
+ /* ul = TYPE element selector -- Affecte tous les types étant le même -- Très large */		/*An element type selector is a selector that targets an element by the tag name. this is an element type selector, because it doesn’t use a class, ID, or other selector to apply the given styles. Instead, it directly targets all HTML5 <ul> elements*/
+	/* .image_google = CLASS element selector -- Affecte tout ce qui a la meme classe -- Bit more targeted*/
+		/* # = ID element selector -- Most precise*/
+		
+/* .nav ul *  // the asterisk character is the universal selector */
+.image_google{	/*Affectation d'attribut a la CLASSE image_google -- ID non nécessaire puisqu'il est seul a se nommer ainsi*/
+	
+	display: block;	/*block = image en bloc donc pas dans le texte  -- Affiché sur une nouvelle ligne */
+	clear: both;		/*assure que rien n'affiche des deux cotés de l'image*/
+	margin: 0 auto;		/*pas de marge*/
+	text-align: center;	/*aligné au centre*/
+	padding-top: 140px;	/*détermine l'espacement avec l'objet au dessus*/
+	padding-bottom: 40px;	/*détermine l'espacement avec l'objet en dessous*/
+}
+
+
+.bar_nav li{
+	padding: 10px;
+	display: inline-block;
+	padding-top: 25px;
+}
+#liens_header_right 
+{
+	float:right;
+	padding-right: 25px;
+}
+#liens_header_left
+{
+	color: #696969;
+	float:left;
+	padding-left: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li.t_liens a:hover {			/*lorsque les éléments de la classe t_liens sont pointés, ils sont soulignés et ecrit en gris foncé  à la place de noir*/
+  text-decoration: underline;	
+  color: #696969;
+}
+footer
+{
+	width: 100%;		/*Force a prendre toute la largeur*/
+	background: #F0F0F0;	/*Mets le fond en gris pale */		
+	padding-top: 25px;
+	border-top: solid 3px #E0E0E0;
+	position: fixed;
+	bottom: 0;	/*Set distance to bottom to 0*/
+	padding-bottom: 0;
+}
+footer li
+{
+	display: inline;
+	background: #F0F0F0;	/*Mets le fond en gris pale */	
+	padding: 10px;
+}
+footer ul	/*Code ici affecte les listes de Footer_Left et Footer_Right*/
+{
+	background: #F0F0F0;	/*Mets le fond en gris pale */
+	padding-bottom: 25px;
+}
+.footer_left
+{
+	float: left;
+	padding-left: 25px;
+}
+.footer_right
+{
+	float: right;
+	padding-right: 25px;
+}
