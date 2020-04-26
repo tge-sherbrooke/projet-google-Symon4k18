@@ -26,7 +26,8 @@ ul {
 	
 	display: block;	/*block = image en bloc donc pas dans le texte  -- Affiché sur une nouvelle ligne */
 	clear: both;		/*assure que rien n'affiche des deux cotés de l'image*/
-	margin: 0 auto;		/*pas de marge*/
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;	/*aligné au centre*/
 	padding-top: 140px;	/*détermine l'espacement avec l'objet au dessus*/
 	padding-bottom: 40px;	/*détermine l'espacement avec l'objet en dessous*/
@@ -60,6 +61,9 @@ ul {
 	border-radius: 3px;
 	border-style: hidden;		
 }
+.bar_nav #t_connexion:hover { 
+  box-shadow: 1px 1px 2px #4169E1;
+}
 
 a {
   text-decoration: none;
@@ -74,35 +78,58 @@ li.t_liens a:hover {			/*lorsque les éléments de la classe t_liens sont point�
 
 #input_recherche { 
 	
-	width: 550px;
+	width: 500px;
 	line-height: 25px;
-	border: 0px;
 	padding-top: 11px;
 	padding-right: 7px;
 	padding-left: 25px;
 	padding-bottom: 11px;
+	
 }
-
 .recherche
 {
 	text-align: center;
 }
+.recherche input
+{
+	border: 1px;
+	border-color: #F0F0F0;
+	border-radius: 50px;
+}
+
+.div_boutons {
+
+	text-align: center;
+	padding-top: 30px;
 
 
-.boutons {
-  text-align: center;
-  padding-top: 30px;
-  margin-bottom: 300px;
-  
 }
-#g_recherche
+.boutons:focus
 {
-	background: #F0F0F0;	/*Mets le fond en gris pale */	
+	outline: none;
 }
-#g_chance
+.boutons
 {
+	
+	margin: 10px;
+	padding: 7px;
+	border: solid 1px #F0F0F0;
+	border-radius: 4px;
 	background: #F0F0F0;	/*Mets le fond en gris pale */	
+	color:#696969;
+	transition-duration: 0.1s;
+	cursor: pointer;
 }
+
+.boutons:hover		/*Font= black , background= lighter, border appears (very small n lil rounded)*/
+{
+	color: #000000;
+	border-color: #AAAAAA;
+	background: #F4F4F4;
+	border-radius: 2px;
+}
+
+
 footer
 {
 	width: 100%;		/*Force a prendre toute la largeur*/
@@ -139,9 +166,9 @@ footer ul	/*Code ici affecte les listes de Footer_Left et Footer_Right*/
 	bottom: 0;	/*Set distance to bottom to 0*/
 	text-decoration:none;
 }
-.Under_footer:hover {			/*lorsque les éléments de la classe under_footer sont pointés, ils sont soulignés */
-  text-decoration: underline;	
-  color: inherit;
+footer.Under_footer a:hover {			/*lorsque les éléments de la classe under_footer sont pointés, ils sont soulignés */
+	text-decoration: underline;	
+	color: #696969;
 }
 .footer_left
 {
