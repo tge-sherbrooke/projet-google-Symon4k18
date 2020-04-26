@@ -17,10 +17,10 @@
 				<ul id="liens_header_right">	<!––Gmail  & Images ––>
 					<li class="t_liens"><a href="#">Gmail</a></li>    <!––t_gmail = texte gmail ––>	
 					<li class="t_liens"><a href="#">Images</a></li>
-					<li id="t_sign_in"><a href="#">Sign In</a></li>
+					<li id="t_connexion"><a href="#">Connexion</a></li>
 				</ul> 
 				<ul id="liens_header_left">	<!–– a propos et google store ––>
-					<li class="t_liens"><a href="#">À Propos</a></li>
+					<li class="t_liens"><a href="#">À propos</a></li>
 					<li class="t_liens"><a href="#">Google Store</a></li>    <!–– le  a href="#" sert a faire un faux lien, rendre clickable le texte.. ––>
 				</ul> 
 			</nav>
@@ -31,7 +31,29 @@
 			<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
 		</div>
 		
-		<footer>
+		<div class="round_bar">  
+				<label for="input_recherche"></label>
+		</div>  
+		
+		<div class="recherche">  
+			<form>
+				<label for="input_recherche"></label>
+				<input type="text" id="input_recherche">
+			</form>
+		</div>  
+		
+		<div class = "boutons">  
+			<input type="submit" value="Recherche Google" id="g_recherche">
+			<input type="submit" value="J'ai de la chance" id="g_chance">
+		</div>
+		
+		<footer class="Over_footer">
+			<ul class="footer_canada">	<!––Canada ––>
+				<li>Canada</li>    
+			</ul> 
+		</footer>
+		
+		<footer class="Under_footer">
 			<ul class="footer_right">	<!––Publicité, Entreprise &Comment fonctionne la recherche Google ? ––>
 				<li><a href="#">Publicité</a></li>    
 				<li><a href="#">Entreprise</a></li>
@@ -44,6 +66,5 @@
 			</ul> 
 		</footer>  
 	
-	 
 	</body>
 </html>

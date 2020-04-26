@@ -14,6 +14,7 @@ header {
 ul {		
   list-style: none;
 }
+
  /* FIN RULE SETS */
  
  /* ul = TYPE element selector -- Affecte tous les types étant le même -- Très large */		/*An element type selector is a selector that targets an element by the tag name. this is an element type selector, because it doesn’t use a class, ID, or other selector to apply the given styles. Instead, it directly targets all HTML5 <ul> elements*/
@@ -49,6 +50,17 @@ ul {
 	padding-left: 25px;
 }
 
+.bar_nav #t_connexion
+{
+	color: #FFFFFF;
+	background: #4169E1;
+	border: 10px;
+	font-weight: bold;
+	padding: 9px 15px;
+	border-radius: 3px;
+	border-style: hidden;		
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -57,34 +69,87 @@ li.t_liens a:hover {			/*lorsque les éléments de la classe t_liens sont point�
   text-decoration: underline;	
   color: #696969;
 }
+
+
+
+#input_recherche { 
+	
+	width: 550px;
+	line-height: 25px;
+	border: 0px;
+	padding-top: 11px;
+	padding-right: 7px;
+	padding-left: 25px;
+	padding-bottom: 11px;
+}
+
+.recherche
+{
+	text-align: center;
+}
+
+
+.boutons {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 300px;
+  
+}
+#g_recherche
+{
+	background: #F0F0F0;	/*Mets le fond en gris pale */	
+}
+#g_chance
+{
+	background: #F0F0F0;	/*Mets le fond en gris pale */	
+}
 footer
 {
 	width: 100%;		/*Force a prendre toute la largeur*/
 	background: #F0F0F0;	/*Mets le fond en gris pale */		
-	padding-top: 25px;
-	border-top: solid 3px #E0E0E0;
-	position: fixed;
-	bottom: 0;	/*Set distance to bottom to 0*/
-	padding-bottom: 0;
+	padding-top: 15px;
+	border-top: solid 2px #E0E0E0;
+
 }
 footer li
 {
 	display: inline;
+	color: #696969;
 	background: #F0F0F0;	/*Mets le fond en gris pale */	
 	padding: 10px;
+	font-size: 15px;
+	
 }
+
 footer ul	/*Code ici affecte les listes de Footer_Left et Footer_Right*/
 {
 	background: #F0F0F0;	/*Mets le fond en gris pale */
-	padding-bottom: 25px;
+	padding-bottom: 15px;
+}
+
+.Over_footer
+{
+	position: fixed;
+	padding-left: 22px;
+	bottom: 45px;	/*Set distance to bottom to 0*/
+}
+.Under_footer 
+{
+	position: fixed;
+	bottom: 0;	/*Set distance to bottom to 0*/
+	text-decoration:none;
+}
+.Under_footer:hover {			/*lorsque les éléments de la classe under_footer sont pointés, ils sont soulignés */
+  text-decoration: underline;	
+  color: inherit;
 }
 .footer_left
 {
 	float: left;
-	padding-left: 25px;
+	padding-left: 22px;
 }
 .footer_right
 {
 	float: right;
-	padding-right: 25px;
+	padding-right: 22px;
 }
